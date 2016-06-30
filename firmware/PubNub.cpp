@@ -6,7 +6,6 @@
 
 #include <ctype.h>
 #include "PubNub.h"
-#inclue "application.h"
 
 // #define PUBNUB_DEBUG 1
 
