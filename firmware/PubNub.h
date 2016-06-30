@@ -84,7 +84,7 @@
  * As soon as the body ends, PubSubclient reads the rest of HTTP reply
  * itself and disconnects. The stored timetoken is used in the next call
  * to the PubSub::subscribe method then. */
-class PubSubClient : public PubNub_BASE_CLIENT {
+class PubSubClient: public PubNub_BASE_CLIENT {
 public:
 	PubSubClient() :
 		PubNub_BASE_CLIENT(), json_enabled(false)
