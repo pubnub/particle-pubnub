@@ -3,6 +3,7 @@
 
 
 #include <stdint.h>
+#include <WebServer/WebServer.h>
 
 
 /* By default, the PubNub library is built to work with the Ethernet
@@ -14,7 +15,7 @@
 
 
 #if defined(PubNub_Ethernet)
-#include "WebServer/WebServer.h"
+#include <Ethernet.h>
 #define PubNub_BASE_CLIENT EthernetClient
 
 #elif defined(PubNub_WiFi)
