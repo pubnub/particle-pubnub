@@ -10,8 +10,8 @@
  * shield. WiFi shield support can be enabled by commenting the
  * following line and commenting out the line after that. Refer
  * to the PubNubJsonWifi sketch for a complete example. */
-//#define PubNub_Ethernet
-#define PubNub_WiFi
+#define PubNub_Ethernet
+//#define PubNub_WiFi
 
 
 #if defined(PubNub_Ethernet)
@@ -19,8 +19,8 @@
 #define PubNub_BASE_CLIENT EthernetClient
 
 #elif defined(PubNub_WiFi)
-//#include <WiFi.h>
-#define PubNub_BASE_CLIENT TCPClient
+#include <WiFi.h>
+#define PubNub_BASE_CLIENT EthernetClient
 
 #else
 #error PubNub_BASE_CLIENT set to an invalid value!
