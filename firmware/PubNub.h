@@ -19,7 +19,7 @@
 #define PubNub_BASE_CLIENT EthernetClient
 
 #elif defined(PubNub_WiFi)
-#include <WiFi.h>
+//#include <WiFi.h>
 #define PubNub_BASE_CLIENT WiFiClient
 
 #else
