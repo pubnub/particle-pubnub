@@ -1,3 +1,7 @@
 {
     "name": "PubNub",
+    "version": "0.0.1",
+    "author": "PubNub",
+    "license": "Choose a license",
+    "description": "PubNub Arduino Library"
 }
