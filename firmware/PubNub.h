@@ -20,7 +20,7 @@
 
 #elif defined(PubNub_WiFi)
 //#include <WiFi.h>
-#define PubNub_BASE_CLIENT WiFiClient
+#define PubNub_BASE_CLIENT TCPClient
 
 #else
 #error PubNub_BASE_CLIENT set to an invalid value!
