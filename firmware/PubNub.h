@@ -1,7 +1,7 @@
 #ifndef PubNub_h
 #define PubNub_h
 
-
+#include "application.h"
 #include <stdint.h>
 //#include <WebServer/WebServer.h>
 
