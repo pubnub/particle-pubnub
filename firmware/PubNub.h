@@ -11,7 +11,8 @@
  * following line and commenting out the line after that. Refer
  * to the PubNubJsonWifi sketch for a complete example. */
 //#define PubNub_Ethernet
-#define PubNub_WiFi
+//#define PubNub_WiFi
+#define PubNub_Particle
 
 
 #if defined(PubNub_Ethernet)
@@ -19,7 +20,10 @@
 #define PubNub_BASE_CLIENT EthernetClient
 
 #elif defined(PubNub_WiFi)
-//#include <WiFi.h>
+#include <WiFi.h>
+#define PubNub_BASE_CLIENT WiFiClient
+
+#elif defined(PubNub_Particle)
 #define PubNub_BASE_CLIENT TCPClient
 
 #else
