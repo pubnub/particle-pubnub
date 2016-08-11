@@ -1,4 +1,4 @@
-#PubNub Arduino Library
+#PubNub Particle Library
 
 This library allows your sketches to communicate with the PubNub cloud message passing system using your board from Particlio.io. Your application can receive and send messages.
 
