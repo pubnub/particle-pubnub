@@ -100,6 +100,5 @@ a note about timeouts below.
 
 Upload the library to Particle Build and include it in your 
 sketch to get started!
-Try out the examples!
 
 
