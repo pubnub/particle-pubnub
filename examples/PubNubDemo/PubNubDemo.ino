@@ -48,7 +48,7 @@ void loop()
 	Serial.println();
 
 	Serial.println("waiting for a message (subscribe)");
-	PubSubClient *pclient = PubNub.subscribe(channel);
+	TCPClient *pclient = PubNub.subscribe(channel);
 	if (!pclient) {
 		Serial.println("subscription error");
 		delay(1000);
