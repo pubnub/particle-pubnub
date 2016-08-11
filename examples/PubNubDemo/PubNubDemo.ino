@@ -19,8 +19,6 @@
   This code is in the public domain.
   */
 
-#include <SPI.h>
-#include <Ethernet.h>
 #include <PubNub.h>
 
 // Some Ethernet shields have a MAC address printed on a sticker on the shield;
@@ -69,7 +67,7 @@ void loop()
 {
 	Ethernet.maintain();
 
-	EthernetClient *client;
+	TCPClient *client;
 
 	Serial.println("publishing a message");
 	client = PubNub.publish(channel, "\"\\\"Hello world!\\\" she said.\"");
